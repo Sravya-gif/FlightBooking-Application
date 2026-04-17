@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="FlightBookingSuite" parallel="false">
+
+    <!-- Listener for Screenshot + Extent Report -->
+    <listeners>
+        <listener class-name="com.srm.listeners.TestListener"/>
+    </listeners>
+
+    <test name="All Flight Booking Tests">
+
+        <classes>
+
+            <!-- Module 1: Flight Search -->
+            <class name="com.srm.tests.FlightSearchTest"/>
+
+            <!-- Module 2: Flight Selection -->
+            <class name="com.srm.tests.FlightSelectionTest"/>
+
+            <!-- Module 3: Purchase Flow -->
+            <class name="com.srm.tests.PurchaseTest"/>
+
+            <!-- Module 4: Different Route Test Flow -->
+            <class name="com.srm.tests.DifferentRouteTest"/>
+            
+            <!-- Module 5: Validations -->
+            <class name="com.srm.tests.ValidationTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
