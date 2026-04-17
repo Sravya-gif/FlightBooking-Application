@@ -26,7 +26,6 @@ This project is a Selenium-based Automation Testing Framework built for the Blaz
 *  Headless execution support
 *  Screenshot capture on failure
 *  HTML reporting with Extent Reports
-*  Thread-safe WebDriver (ThreadLocal)
 
 ---
 
